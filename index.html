@@ -68,25 +68,31 @@
       </div>
     </div>
     <!-- Invitacion -->
-    <div id="invitacion" class="invitacion hide">
+    <div id="invitacion" class="invitacion hide animate__animated">
       <section
+        id="cuando"
         class="cuando p-4 d-flex justify-content-center align-items-center"
       >
         <div>
           <div
-            class="d-flex justify-content-center pb-4rem"
-            data-aos="zoom-in-right"
-            data-aos-duration="2000"
+            id="name"
+            class="d-flex justify-content-center pb-4rem animate__animated"
           >
             <img
+              loading="lazy"
               class="img-fecha animate-right text-center pb-4"
               src="./assets/img/titulo.png"
               alt="fecha"
             />
           </div>
-          <div>
-            <p class="text-center font-kalam m-0 lead pt-4">Faltan</p>
-            <p id="demo" class="pl-4 pr-4 font-kalam cuenta-regresiva"></p>
+          <div id="xv" class="animate__animated">
+            <p class="text-center animate__animated font-kalam m-0 lead pt-4">
+              Faltan
+            </p>
+            <p
+              id="demo"
+              class="pl-4 animate__animated pr-4 font-kalam cuenta-regresiva"
+            ></p>
           </div>
         </div>
         <div class="text-white text-center player-btn" id="play">
@@ -99,7 +105,7 @@
             id="audio"
             controls
             autoplay
-            src="./assets/audio/ven-con-nosotros.mpeg"
+            src="./assets/audio/ave-maria.mp3"
           ></audio>
         </div>
       </section>
@@ -118,6 +124,7 @@
         <div class="w-70">
           <div class="d-flex justify-content-center pb-4rem">
             <img
+              loading="lazy"
               class="decoration"
               src="./assets/img/line-gold-4.png"
               alt="decoration"
@@ -139,6 +146,7 @@
           </div>
           <div class="d-flex justify-content-center pt-4rem">
             <img
+              loading="lazy"
               class="decoration"
               src="./assets/img/line-gold-4.png"
               alt="decoration"
@@ -155,7 +163,9 @@
           data-aos-offset="200"
         >
           <div class="d-flex justify-content-center align-items-center">
-            <p class="display-3 text-center font-paris pl-4 pr-4">Fiesta</p>
+            <p class="display-3 text-center font-paris pl-4 pr-4">
+              Cuándo y Dónde
+            </p>
           </div>
         </div>
       </section>
@@ -177,7 +187,7 @@
               <img
                 loading="lazy"
                 class="img-ubicaciones"
-                src="./assets/img/pastel.png"
+                src="./assets/img/pastel2.png"
                 alt="iglesia"
               />
             </div>
@@ -360,12 +370,16 @@
         </p>
       </section>
       <section class="text-center p-4 bg-dark-blue">
-        <h2 class="font-cormo" data-aos="zoom-in" data-aos-duration="2000">
+        <h2
+          class="font-cormo text-dark"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
           Por favor, ¡Confirma tu asistencia!
         </h2>
         <div class="d-flex justify-content-center align-items-center">
           <p
-            class="w-50 py-4 font-cormo"
+            class="w-50 py-4 font-cormo text-dark"
             data-aos="fade-in"
             data-aos-duration="3000"
           >
@@ -375,7 +389,9 @@
         <div>
           <a
             href="https://wa.me/527821945930?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20al%20evento"
-            ><button class="btn p-3 display-6 font-kala">
+            ><button
+              class="btn p-3 display-6 font-kala animate__animated animate__pulse animate__infinite"
+            >
               <i class="bi bi-check"></i>Confirmar
             </button></a
           >
@@ -402,7 +418,6 @@
       </section>
       <section class="last-container">
         <p class="text-center m-0 p-0">
-          Invitación hecha por
           <a
             target="_blank"
             href="https://wa.me/524426147355?text=Hola%20Esmeralda!%20Me%20interesa%20contratar%20tu%20servicio"

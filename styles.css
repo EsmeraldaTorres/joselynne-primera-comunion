@@ -8,6 +8,7 @@
 }
 .font-paris {
   font-family: "Parisienne", cursive;
+  /* font-family: "Pinyon Script", cursive; */
 }
 .font-great {
   font-family: "Great Vibes", cursive;
@@ -31,9 +32,7 @@
 .display-3 {
   font-size: 3rem;
 }
-.font-paris {
-  font-family: "Parisienne", cursive;
-}
+
 .display-1 {
   font-size: 7rem !important;
 }
@@ -67,6 +66,7 @@
 /* data-aos-duration="3000" */
 /* sobre */
 .sobre {
+  /* background-color: rgb(30, 143, 143); */
   height: 100vh;
   width: 80vw;
   /* z-index: 1; */
@@ -88,7 +88,7 @@
   --animate-duration: 0.05s;
 }
 .animate__animated .animate__pulse {
-  --animate-duration: 3s;
+  --animate-duration: 1.2s;
 }
 
 .z-index-3 {
@@ -142,6 +142,12 @@ button:focus {
 
 .visibility {
   visibility: hidden;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__lightSpeedInRight {
+  --animate-duration: 3.5s;
 }
 /* Cuando */
 .cuando {

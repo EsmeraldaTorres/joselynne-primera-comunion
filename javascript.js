@@ -2,23 +2,19 @@ const audio = document.getElementById("audio");
 const playPause = document.getElementById("play");
 
 function abrir() {
+  // document.getElementById("parent-div").classList.remove("test-class");
+  document.getElementById("xv").classList.add("animate__lightSpeedInRight");
+
   document.getElementById("parent-div").classList.add("animate__slideOutUp");
   document.getElementById("logo").classList.remove("animate__infinite");
   document.getElementById("pulse").classList.add("hide");
-  document.getElementById("parent-div").classList.remove("test-class");
   document.getElementsByTagName("body")[0].classList.remove("avoiding-scroll");
+  document.getElementById("invitacion").classList.remove("hide");
+  document.getElementById("name").classList.add("animate__zoomIn");
+  document.getElementById("cuando").classList.add("animate__zoomIn");
+  audio.play();
 
   window.scrollTo(0, 0);
-  setTimeout(function () {
-    // document.getElementById("logo").classList.add("hide");
-    document.getElementById("hoja-principal").classList.add("hide");
-    document.getElementById("invitacion").classList.remove("hide");
-    document.getElementById("name").classList.add("animate__zoomIn");
-    document.getElementById("xv").classList.add("animate__slideInUp");
-    document.getElementById("invitacion").classList.add("animate__slideOutUp");
-
-    audio.play();
-  }, 1000);
 }
 
 // auidio
