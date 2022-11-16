@@ -704,11 +704,11 @@ a:hover {
 }
 /*  window  2 back */
 .window-back-2 {
-  height: 100vh;
+  height: 100%;
   max-width: 100%;
   background-image: url("./assets/img/joselyne-3.jpeg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -722,7 +722,6 @@ a:hover {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: rgba(255, 235, 205, 0);s */
   background-image: url("./assets/img-j-ignacio/jose4.jpeg");
 }
 
@@ -730,7 +729,6 @@ a:hover {
   padding-top: 5rem;
   min-height: max-content;
   margin: 0;
-  /* background-color: #94815d; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -741,7 +739,6 @@ a:hover {
   min-height: max-content;
   margin: 0;
   padding-bottom: 7rem;
-  /* background-color: #94815d; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
