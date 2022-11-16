@@ -1,0 +1,956 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.font-edu {
+  font-family: "Edu QLD Beginner", cursive;
+}
+.font-paris {
+  font-family: "Parisienne", cursive;
+}
+.font-great {
+  font-family: "Great Vibes", cursive;
+}
+.font-tange {
+  font-family: "Tangerine", cursive;
+}
+.font-pinyon {
+  font-family: "Pinyon Script", cursive;
+}
+.font-charmo {
+  font-family: "Charmonman", cursive;
+}
+.max-w-90 {
+  max-width: 100vw;
+}
+.avoiding-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+.display-3 {
+  font-size: 3rem;
+}
+.font-paris {
+  font-family: "Parisienne", cursive;
+}
+.display-1 {
+  font-size: 7rem !important;
+}
+.font-cormo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
+.font-kalam {
+  font-family: "Kalam", cursive;
+}
+.font-gold {
+  color: #9d6e26;
+}
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.title2 {
+  font-size: 2.5rem;
+}
+
+.test-class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* data-aos-duration="3000" */
+/* sobre */
+.sobre {
+  height: 100vh;
+  width: 80vw;
+  /* z-index: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-dark-black {
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.393),
+      rgba(5, 7, 12, 0.462)
+    ),
+    url("./assets/img/captura.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.animate__animated.animate__fadeOut {
+  --animate-duration: 0.05s;
+}
+.animate__animated .animate__pulse {
+  --animate-duration: 3s;
+}
+
+.z-index-3 {
+  position: absolute;
+  bottom: 50vh;
+  height: 40vh;
+  top: 20vh;
+  z-index: 3;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.z-index-2 {
+  position: absolute;
+  bottom: 20vh;
+  height: 50vh;
+  z-index: 2;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+button {
+  box-shadow: none !important;
+  transition: none !important;
+}
+button:focus {
+  outline: none;
+}
+
+.btn-open {
+  position: absolute;
+  z-index: 4;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  border: none;
+}
+.btn-open img {
+  height: 45%;
+  width: 35%;
+  padding-top: 2rem;
+}
+.hide {
+  visibility: hidden;
+  max-height: 0vw;
+}
+
+.visibility {
+  visibility: hidden;
+}
+/* Cuando */
+.cuando {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.151),
+      rgba(5, 7, 12, 0.075)
+    ),
+    url("./assets/img/bg-primera-comunion.png");
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: top;
+}
+.cuando2 {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.151),
+      rgba(5, 7, 12, 0.075)
+    ),
+    url("./assets/img/bg-primera-comunion.png");
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: top;
+}
+.foto {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.151),
+      rgba(5, 7, 12, 0.075)
+    ),
+    url("./assets/img/joselyne-6.jpeg");
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: top;
+}
+.img-fecha {
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.cuenta {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.h-max-content {
+  background-color: #3939397a;
+  height: max-content;
+}
+.text-fecha {
+  font-size: 3rem;
+}
+
+.cuenta-regresiva {
+  text-align: center;
+  font-size: 1.3rem;
+  /* text-shadow: 1px 1px 2px rgba(20, 17, 17, 0.507); */
+}
+.txt-pink {
+  font-size: 2rem;
+  color: rgb(8, 8, 8);
+  /* color: rgba(160, 106, 116, 0.979); */
+  text-shadow: rgba(209, 205, 205, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main-phrase {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: min-content;
+  margin: 0;
+  /* background-color: #bdb9ac; */
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.151),
+      rgba(5, 7, 12, 0.075)
+    ),
+    url("./assets/img/bg-primera-comunion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.w-70 {
+  width: 80%;
+}
+.main-phrase .text {
+  font-size: 1.6rem;
+}
+/* home */
+.invitacion {
+  width: 100vw;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.308),
+      rgba(5, 7, 12, 0.335)
+    ),
+    url("./assets/img/bg-primera-comunion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.name {
+  /* padding-top: 5rem; */
+  width: 80%;
+  padding-right: 0;
+}
+/* audio */
+.player-audio {
+  display: none;
+}
+.player-icon {
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 100%;
+}
+.player-btn {
+  bottom: 1%;
+  right: 0.5rem;
+  position: fixed;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 9;
+}
+.player-btn:hover {
+  cursor: pointer;
+}
+/*  window-bg*/
+.second-section {
+  height: min-content;
+  max-width: 100%;
+  background-image: url("./assets/img-j-ignacio/");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.second-section .container {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding: 1rem 0;
+  min-width: 100%;
+}
+.second-section .container2 {
+  height: 60vh;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .container3 {
+  background-color: rgb(255, 255, 255);
+  height: min-content;
+}
+.decoration {
+  width: 200px;
+  height: 5vh;
+}
+.display-4 {
+  font-size: 3rem;
+}
+.display-6 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding: 0 2rem;
+}
+.cuenta-regresiva {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cuenta {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+.txt-pink {
+  font-size: 1rem;
+  color: cornsilk;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+hr {
+  width: 30%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    #f0f0f02f,
+    #000000b6,
+    #000000b6,
+    #f0f0f02f
+  );
+}
+.icon-mp4 {
+  width: 50px;
+}
+/* window */
+.window-back {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(216, 186, 186);
+  /* background-image: url("./assets/img/pexels-karolina-grabowska-4040592.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+.window-back2 {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 235, 235);
+  /* background-image: url("./assets/img/pexels-karolina-grabowska-4040592.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+.window-back3 {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/img/joselyne-11.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* linear-gradient(
+        rgba(5, 7, 12, 0.527),
+        rgba(5, 7, 12, 0.514)
+      ), */
+.window-15 {
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.527),
+      rgba(5, 7, 12, 0.514)
+    ),
+    url("./assets/img/brindis.png");
+}
+.window-152 {
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.527),
+      rgba(5, 7, 12, 0.514)
+    ),
+    url("./assets/img/pastel2.png");
+}
+.window-153 {
+  color: white;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./assets/img/joselyne-4.jpeg");
+}
+.window {
+  color: white;
+  height: 0vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* background-color: rgba(255, 235, 205, 0);s */
+  /* background-image: url("./assets/img-j-ignacio/bg-azul-marino-1.png"); */
+}
+.numero-15 {
+  width: 200px;
+}
+.pb-4rem {
+  padding-bottom: 4rem;
+}
+.pt-4rem {
+  padding-top: 4rem;
+}
+.animate-image {
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+@keyframes appear-image {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.appear-image {
+  animation: appear-image 0.9s;
+}
+/* Pase */
+.pase {
+  background-color: whitesmoke;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.font-icon {
+  font-size: 1.2rem;
+}
+.font-gold {
+  color: rgb(168, 143, 105);
+}
+/* recepcion */
+.recepcion-img {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.274),
+      rgba(5, 7, 12, 0.171)
+    ),
+    url("./assets/img/joselyne-9.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.recepcion-information {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: max-content;
+  margin: 0;
+  background-image: url("./assets/img/bg-primera-comunion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.recepcion-information2 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: max-content;
+  margin: 0;
+  background-image: url("./assets/img/bg-primera-comunion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.hora {
+  font-size: 3.5rem;
+}
+/* itinerario */
+.itinerario {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.277),
+      rgba(5, 7, 12, 0.277)
+    ),
+    url("./assets/img/salon3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+h3 {
+  top: 25;
+}
+.w-25 {
+  width: 25%;
+}
+.h-25 {
+  height: 25%;
+}
+.card {
+  background-color: rgba(137, 43, 226, 0);
+  width: 100vw;
+  height: 50vh;
+  border: none;
+}
+.card-img {
+  height: 150px;
+  width: 160px;
+  padding-bottom: 1rem;
+}
+.display-5 {
+  font-size: 1.6rem;
+}
+.display-number {
+  font-size: 1.2rem;
+}
+/* ubicaciÃ³n */
+.ubicacion {
+  height: min-content;
+}
+.line {
+  /* height: 20px; */
+  padding-top: 1%;
+  width: 200px;
+}
+.container-ubicaciones {
+  width: 70%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.img-ubicaciones {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.bg-gold {
+  background-color: rgb(168, 143, 105) !important;
+}
+button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: ease-out 2s;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.owl-nav {
+  color: rgba(27, 27, 26, 0.575);
+  display: flex;
+  font-size: 2rem;
+  margin-top: 0px !important;
+  justify-content: space-between;
+}
+.icon-img {
+  height: 100px;
+  width: 30% !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.owl-container {
+  width: 100%;
+}
+.w-30 {
+  width: 30%;
+}
+/* segundo window */
+
+.w-90 {
+  width: 85%;
+}
+/* nuestro-inicio */
+.nuestro-inicio {
+  background-color: rgb(197, 166, 119);
+}
+.nuestro-inicio img {
+  width: 250;
+  height: 180px;
+  border: solid 2px whitesmoke;
+  border-radius: 5px;
+}
+.text {
+  width: 80%;
+}
+/* regalos */
+.w-80 {
+  width: 80%;
+}
+.text2 {
+  width: 50%;
+}
+.window-regalos {
+  height: min-content;
+  max-width: 100%;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.277),
+      rgba(5, 7, 12, 0.277)
+    ),
+    url("./assets/img/bg-primera-comunion.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.btn {
+  white-space: normal !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.card-regalos {
+  color: white;
+  margin: 2rem 0;
+  height: 80%;
+  width: 100%;
+  /* background-color: rgba(156, 163, 116, 0.568); */
+}
+.logo-liverpool {
+  width: 150px;
+}
+.icon-sobre {
+  font-size: 5.5rem;
+}
+.bg-gray {
+  background-color: rgba(189, 188, 188, 0.29);
+}
+.bg-dark-blue {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  color: white;
+  background-image: url("./assets/img/pexels-karolina-grabowska-4040592.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.padding-4 {
+  padding-top: 2rem !important;
+  padding-bottom: 4rem !important;
+}
+.bg-vestimenta {
+  height: min-content !important;
+  color: white;
+  background-image: url("./assets/img/pexels-madison-inouye-1831234.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-trans-white {
+  background-color: rgba(249, 249, 240, 0.229);
+}
+/*  window  2 back */
+.window-back-2 {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("./assets/img/joselyne-3.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.window-2 {
+  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: rgba(255, 235, 205, 0);s */
+  background-image: url("./assets/img-j-ignacio/jose4.jpeg");
+}
+
+.familiares-information {
+  padding-top: 5rem;
+  min-height: max-content;
+  margin: 0;
+  /* background-color: #94815d; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url("./assets/img/pexels-madison-inouye-1831234.jpg"); */
+}
+.familiares-information2 {
+  padding-top: 5rem;
+  min-height: max-content;
+  margin: 0;
+  padding-bottom: 7rem;
+  /* background-color: #94815d; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url("./assets/img/pexels-madison-inouye-1831234.jpg"); */
+}
+.card {
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.325);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.h-80 {
+  height: 80%;
+}
+.padres {
+  border-radius: 100%;
+  width: 60%;
+}
+.last-container {
+  color: rgba(255, 255, 255, 0.496);
+  font-size: 0.8rem;
+  height: 3vh;
+  width: 100%;
+  background-color: #12141d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+}
+.display-2 {
+  font-size: 2.8rem;
+}
+.gracias {
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.393),
+      rgba(5, 7, 12, 0.462)
+    ),
+    url("./assets/img/joselyne-6.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.marca {
+  color: rgba(244, 244, 248, 0.873);
+}
+@media (min-width: 470px) {
+  .name {
+    width: 70%;
+    padding-right: 0 !important;
+  }
+  .display-3 {
+    font-size: 3.5rem;
+  }
+  .title-principal {
+    font-size: 3.5rem;
+  }
+  .hora {
+    font-size: 2.8rem;
+  }
+  .display-1 {
+    font-size: 8rem !important;
+  }
+  .nuestro-inicio img {
+    width: 450px;
+    height: 350px;
+  }
+  .icon-sobre {
+    font-size: 7rem;
+  }
+  .card-img {
+    height: 200px;
+    width: 160px;
+  }
+  .logo-liverpool {
+    width: 200px;
+  }
+  .w-90 {
+    width: 80%;
+  }
+  .display-2 {
+    font-size: 3.5rem;
+  }
+  .display-5 {
+    font-size: 1.3rem;
+  }
+  .img-fecha {
+    height: 50vh;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .name {
+    width: 60%;
+    padding-right: 0 !important;
+  }
+  .hora {
+    font-size: 3rem;
+  }
+  .display-3 {
+    font-size: 4rem;
+  }
+  .display-1 {
+    font-size: 9rem !important;
+  }
+  .title-principal {
+    font-size: 5.5rem;
+  }
+
+  .display-4 {
+    font-size: 3.6rem;
+  }
+
+  .cuenta-regresiva {
+    font-size: 1.7rem;
+  }
+  .owl-container {
+    width: 60%;
+  }
+  .text {
+    width: 50%;
+  }
+  .nuestro-inicio img {
+    width: 600px;
+    height: 500px;
+  }
+  .card-regalos {
+    width: 80%;
+  }
+  .logo-liverpool {
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+  .w-90 {
+    width: 60%;
+  }
+  .display-2 {
+    font-size: 4.5rem;
+  }
+  .display-5 {
+    font-size: 1.4rem;
+  }
+  .img-fecha {
+    height: 50vh;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1020px) {
+  .name {
+    width: 50%;
+    padding-right: 0 !important;
+  }
+  .hora {
+    font-size: 3.5rem;
+  }
+  .display-1 {
+    font-size: 10rem !important;
+  }
+  .z-index-3 {
+    position: absolute;
+    bottom: 30;
+    top: 0;
+    height: 70vh;
+    z-index: 3;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    background-position: center;
+  }
+  .z-index-2 {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    z-index: 2;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+  }
+  .btn-open img {
+    height: 20%;
+    width: 20%;
+  }
+  .card {
+    height: 45vh;
+  }
+  .logo-liverpool {
+    width: 250px;
+  }
+  .owl-container {
+    width: 30%;
+  }
+  .w-90 {
+    width: 45%;
+  }
+  .display-2 {
+    font-size: 5.5rem;
+  }
+  .display-5 {
+    font-size: 1.6rem;
+  }
+}
