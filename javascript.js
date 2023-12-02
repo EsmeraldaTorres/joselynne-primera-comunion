@@ -2,19 +2,22 @@ const audio = document.getElementById("audio");
 const playPause = document.getElementById("play");
 
 function abrir() {
-  // document.getElementById("parent-div").classList.remove("test-class");
-  document.getElementById("xv").classList.add("animate__lightSpeedInRight");
-
-  document.getElementById("parent-div").classList.add("animate__slideOutUp");
+  document.getElementById("sobre-arriba").classList.add("animate__fadeOutUp");
+  document.getElementById("sobre-abajo").classList.add("animate__slideOutDown");
   document.getElementById("logo").classList.remove("animate__infinite");
   document.getElementById("pulse").classList.add("hide");
+  document.getElementById("parent-div").classList.remove("test-class");
   document.getElementsByTagName("body")[0].classList.remove("avoiding-scroll");
-  document.getElementById("invitacion").classList.remove("hide");
-  document.getElementById("name").classList.add("animate__zoomIn");
-  document.getElementById("cuando").classList.add("animate__zoomIn");
   audio.play();
 
   window.scrollTo(0, 0);
+  setTimeout(function () {
+    document.getElementById("logo").classList.add("hide");
+    document.getElementById("hoja-principal").classList.add("hide");
+    document.getElementById("invitacion").classList.remove("hide");
+    document.getElementById("name").classList.add("animate__zoomIn");
+    document.getElementById("xv").classList.add("animate__slideInUp");
+  }, 2500);
 }
 
 // auidio
@@ -33,7 +36,7 @@ playPause.addEventListener("click", () => {
 
 // a regresiva -------------------------------------------------------------------
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 26, 2022 1:30").getTime();
+var countDownDate = new Date("Dec 16, 2023 19:30").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -52,7 +55,7 @@ var x = setInterval(function () {
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = `
   <div class="d-flex justify-content-center">
-    <div class="cuenta " >
+    <div class="cuenta txt-gray-white p-4" >
   <span>${days} días</span>
   <span class="ml-2 mr-2"> : </span>  
   <span>${hours} hrs</span> 

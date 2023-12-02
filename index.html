@@ -19,6 +19,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <!-- carousel2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,58 +55,55 @@
     />
     <!-- AOS animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Joselynne Elena Mi Primera Comunion</title>
+    <title>Cristhel XV's</title>
   </head>
-  <body class="avoiding-scrol w-10">
+  <body class="avoiding-scroll w-100">
     <!-- Sobre -->
     <div
-      class="bg-dark-black d-flex justify-content-center animate__animated align-items-center test-class"
+      class="bg-dark-black d-flex justify-content-center align-items-center test-class"
       id="parent-div"
     >
       <div id="hoja-principal" class="sobre">
+        <img
+          id="sobre-arriba"
+          src="./assets/img/sobrearriba.png"
+          class="animate__animated p-0 m-0 z-index-3"
+          alt="sobre-arriba"
+        />
+        <img
+          id="sobre-abajo"
+          class="p-0 m-0 z-index-2 animate__animated"
+          src="./assets/img/sobreabajo.png"
+          alt="sobre-abajo"
+        />
         <button id="btn-open" class="btn-open" onclick="abrir()">
-          <p
-            class="display-4 text-center font-paris text-white text-shadow pl-4 pr-4"
-          >
-            Bienvenidos a la invitación de Joselynne Elena
-          </p>
           <img
             id="logo"
-            loading="lazy"
-            src="./assets/img/logo-joselyne.png"
+            src="./assets/img/selloC.png"
             class="animate__animated animate__pulse animate__infinite"
             alt="logo"
           />
-          <p id="pulse" class="text-white text-shadow">Pulse para abrir</p>
+          <p id="pulse">Pulse para abrir</p>
         </button>
       </div>
     </div>
     <!-- Invitacion -->
-    <div id="invitacion" class="invitacion hide animate__animated">
-      <section
-        id="cuando"
-        class="cuando p-4 d-flex justify-content-center align-items-center"
-      >
-        <div>
-          <div
-            id="name"
-            class="d-flex justify-content-center pb-4rem animate__animated"
-          >
-            <img
-              loading="lazy"
-              class="img-fecha animate-right text-center pb-4"
-              src="./assets/img/titulo.png"
-              alt="fecha"
-            />
-          </div>
-          <div id="xv" class="animate__animated">
-            <p class="text-center animate__animated font-kalam m-0 lead pt-4">
-              Faltan
-            </p>
-            <p
-              id="demo"
-              class="pl-4 animate__animated pr-4 font-kalam cuenta-regresiva"
-            ></p>
+    <div id="invitacion" class="invitacion hide">
+      <section class="home d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-name">
+          <div class="pt-4 mt-4">
+            <h2
+              id="name"
+              class="text-white text-center animate__animated font-tange display-1"
+            >
+              Cristhel
+            </h2>
+            <h1
+              id="xv"
+              class="font-tange text-center display-3 text-white animate__animated"
+            >
+              Mis XV años
+            </h1>
           </div>
         </div>
         <div class="text-white text-center player-btn" id="play">
@@ -105,48 +116,100 @@
             id="audio"
             controls
             autoplay
-            src="./assets/audio/ave-maria.mp3"
+            src="./assets/audio/audio.m3"
           ></audio>
         </div>
       </section>
-      <section class="foto p-4 d-flex justify-content-center pt-4">
-        <p
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-offset="420"
-          class="display-4 font-paris w-100 text-center text-white pt-4rem h-max-content position-absolute animate-text pb-3"
-        >
-          Joselynne Elena Crescencio Luna
-        </p>
+      <section
+        class="cuando p-4 d-flex justify-content-center align-items-center"
+      >
+        <div>
+          <div
+            class="d-flex justify-content-center"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
+            <img
+              class="img-fecha animate-right text-center"
+              src="./assets/img/fechacristel.png"
+              alt="fecha"
+            />
+          </div>
+          <div
+            class="animate-left"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          >
+            <p class="text-center font-kalam txt-gray-white m-0 pt-4">Faltan</p>
+            <p id="demo" class="pl-4 pr-4 font-kalam cuenta-regresiva"></p>
+          </div>
+        </div>
       </section>
-      <section class="main-phrase d-flex justify-content-center">
+      <section class="main-phrase text-white d-flex justify-content-center">
         <div class="w-70">
           <div class="d-flex justify-content-center pb-4rem">
             <img
-              loading="lazy"
               class="decoration"
               src="./assets/img/line-gold-4.png"
               alt="decoration"
             />
           </div>
-          <div
-            class="pl-4 pr-4 pb-4 mb-4 text-shadow font-kalam text-center animate-text display-6"
+          <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-offset="300"
+            class="display-4 font-paris names text-center animate-text pb-3"
+          >
+            Cristhel Garcia Alejandro
+          </p>
+          <p
+            class="pl-4 pr-4 pb-4 mb-4 text-shadow font-kalam text-invitation text-center animate-text display-6"
             data-aos="fade-up"
             data-aos-offset="250"
             data-aos-easing="ease-in-sine"
             data-aos-duration="1500"
           >
-            <p class="pb-4">
-              Por tu infinita misericordia, por ser mi creador y mi padre, hoy
-              vengo a ti a pedirte que seas mi guía durante la vida.
-            </p>
+            Con el transcurso del tiempo note que sigo creciendo, pero que este
+            se estaciona en una que siempre soñé desde niña... verme vestida de
+            princesa acompañada con mis seres queridos y grandes amigos... ya
+            estoy esperando con ansias esta noche, y por eso quiero contar con
+            tu especial presencia.
+          </p>
+          <p
+            class="pl-4 pr-4 text-invitation pb-4 mb-4 text-shadow font-kalam text-center animate-text display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            Mi familia y yo, tenemos el honor de invitarte a celebrar mis XV
+            años.
+          </p>
+          <p
+            class="pl-4 text-invitation pr-4 pb-4 mb-4 text-shadow font-kalam text-center animate-text display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            El evento será el día sábado 16 de diciembre del presente año, en el
+            salón de eventos Suterm. Te esperamos en punto de las 7:30pm para
+            llevar a cabo nuestra celebración.
+          </p>
+          <p
+            class="pl-4 pr-4 pb-4 mb-4 text-shadow text-invitation font-kalam text-center animate-text display-6"
+            data-aos="fade-up"
+            data-aos-offset="250"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            Tu presencia es muy importante para mi y mi familia quienes han
+            preparado este evento tan significativo con mucho esfuerzo y amor.
+          </p>
 
-            Acompáñame a celebrar mi primera comunión en compañía de mis padres
-          </div>
           <div class="d-flex justify-content-center pt-4rem">
             <img
-              loading="lazy"
               class="decoration"
               src="./assets/img/line-gold-4.png"
               alt="decoration"
@@ -163,53 +226,102 @@
           data-aos-offset="200"
         >
           <div class="d-flex justify-content-center align-items-center">
-            <p class="display-3 text-center font-paris pl-4 pr-4">
-              Cuándo y Dónde
-            </p>
+            <p class="display-3 text-center font-paris pl-4 pr-4">Fiesta</p>
           </div>
         </div>
       </section>
-      <section
-        class="recepcion-information2 d-flex align-items-center justify-content-center"
+      <!-- <section
+        class="recepcion-information2 text-white d-flex align-items-center justify-content-center"
       >
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="800"
-          data-aos-offset="400"
-        >
+        <div>
+          <h2
+            class="text-white font-paris display-4 pr-4 pl-4 mb-4 text-center"
+          >
+            Ceremonia Religiosa
+          </h2>
           <div class="d-flex justify-content-center align-items-center">
-            <div>
-              <h2 class="font-kalam text-center display-3">Sábado</h2>
-              <p class="font-kalam text-center display-4">26 de</p>
-              <p class="font-kalam text-center display-4">Noviembre</p>
-
-              <img
-                loading="lazy"
-                class="img-ubicaciones"
-                src="./assets/img/pastel2.png"
-                alt="iglesia"
-              />
-            </div>
+            <img
+              loading="lazy"
+              class="img-ubicaciones"
+              src="./assets/img/cruz.png"
+              alt="iglesia"
+            />
           </div>
-          <p class="hora font-kalam text-center">3:30pm</p>
+          <p class="hora font-kalam text-center">7:00pm</p>
 
-          <p class="lead font-kalam text-center mr-4 ml-4">
-            Argentina #904 colonia 27 de septiembre, Poza Rica, Veracruz.
+          <p class="text-infor font-kalam text-center mr-4 ml-4">
+            Hacienda Los Samanes carretera federal comalcalco-paraiso km2
           </p>
           <div class="d-flex align-items-center py-4 justify-content-center">
             <a
-              href="https://www.google.com.mx/maps/place/Av+Argentina+904,+27+de+Septiembre,+93320+Poza+Rica+de+Hidalgo,+Ver./@20.5405183,-97.4666875,17z/data=!3m1!4b1!4m5!3m4!1s0x85da6ac86345cc27:0x9a46de8a546a0480!8m2!3d20.5405133!4d-97.4622028"
+              class=""
+              href="https://www.google.com/maps?q=Hacienda+Los+Samanes&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyBggFEEUYPTIGCAYQRRg8MgYIBxBFGD3SAQgxMTA2ajBqMagCALACAA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiFr8GT7t2CAxWsKkQIHTJmA8YQ_AUoAXoECAIQAw"
               ><button class="btn display-6 py-3 d-flex align-items-center">
                 <i class="bi bi-geo-alt"></i>
                 <span
                   class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
                 >
-                  Cómo llegar
+                  Ver mapa
                 </span>
               </button></a
             >
           </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="window-back">
+        <div
+          class="window-15"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          data-aos-offset="200"
+        >
+          <div class="d-flex justify-content-center align-items-center">
+¿          </div>
+        </div>
+      </section> -->
+      <section
+        class="recepcion-information text-white d-flex align-items-center justify-content-center"
+      >
+        <div>
+          <h2
+            class="txt-green font-gold font-kalam display-4 pr-4 pl-4 mb-4 text-center"
+          >
+            Salón de eventos Suterm (CFE)
+          </h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              loading="lazy"
+              class="img-ubicaciones"
+              src="./assets/img/mesas.png"
+              alt="iglesia"
+            />
+          </div>
+          <p class="hora font-kalam text-center text-green">7:30pm</p>
+
+          <p class="lead font-kalam text-center mr-4 ml-4 text-infor txt-green">
+            Zoila E. Peña Falcon, 86597 Cárdenas, Tab.
+          </p>
+          <div class="d-flex align-items-center py-4 justify-content-center">
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/SINDICATO+DE+LA+SUTERM/@17.9778247,-93.3619302,17z/data=!3m1!4b1!4m6!3m5!1s0x85ec21fed107a8cf:0x88274bcb1719117d!8m2!3d17.9778247!4d-93.3619302!16s%2Fg%2F11pvh3y6cn?entry=ttu"
+              ><button class="btn display-6 py-3 d-flex align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <span
+                  class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                >
+                  Ver mapa
+                </span>
+              </button></a
+            >
+          </div>
+          <!-- <div class="d-flex justify-content-center align-items-center">
+            <p class="w-50 text-center">
+              Da click en el botón para obtener más indicaciones
+            </p>
+          </div> -->
         </div>
       </section>
       <section class="window-back3">
@@ -221,71 +333,32 @@
           data-aos-offset="600"
         ></div>
       </section>
-      <section class="familiares-information">
-        <div>
-          <p
-            class="text-center mt-4 title2 font-gold font-paris"
-            data-aos="zoom-in-up"
-            data-aos-duration="2000"
-          >
-            Mis padres
-          </p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="row m-0">
-            <div class="col-12 mt-4">
-              <p
-                class="text-center display-6 font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Rubén Crescencio Martínez
-              </p>
-              <p
-                class="text-center display-6 font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Karla Giovanna Luna Rivera
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-around align-items-center">
-          <img
-            loading="lazy"
-            class="decoration"
-            src="./assets/img/line-gold-4.png"
-            alt="linea"
-          />
-        </div>
-      </section>
       <section class="familiares-information2">
         <div>
           <p
-            class="text-center mt-4 title2 font-gold font-paris"
+            class="text-center mt-4 display-3 px-3 font-gold font-paris"
             data-aos="zoom-in-up"
             data-aos-duration="2000"
           >
-            Mis padrinos
+            Agradezco a mis padres
           </p>
         </div>
         <div class="d-flex justify-content-center">
           <div class="row m-0">
             <div class="col-12 mt-4">
               <p
-                class="text-center display-6 font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1450"
-              >
-                Sergio del Ángel Antonio
-              </p>
-              <p
-                class="text-center display-6 font-kalam"
+                class="text-center text-white cuenta-regresiva font-kalam"
                 data-aos="flip-down"
                 data-aos-duration="1500"
               >
-                Arely Crescencio Martínez
+                Nuri Cristal Alejandro Rodríguez
+              </p>
+              <p
+                class="text-center text-white cuenta-regresiva font-kalam"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Miguel García Gonzáles
               </p>
             </div>
           </div>
@@ -299,13 +372,57 @@
           />
         </div>
       </section>
-      <section class="window-back-2"></section>
-      <section class="pase pt-0">
-        <p class="m-0 display-6 font-kala pt-4">
-          Tu presencia es mi mayor regalo, pero si deseas obsequiarme algo, te
-          dejo algunos datos sobre mi
+      <section class="familiares-information">
+        <div>
+          <p
+            class="text-center mt-4 display-3 px-3 font-gold font-paris"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
+            Y a mis padrinos
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="row m-0">
+            <div class="col-12 mt-4">
+              <p
+                class="text-center display-6 text-white cuenta-regresiva font-kalam"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Dellimir de la Cruz de la Cruz
+              </p>
+              <p
+                class="text-center display-6 text-white cuenta-regresiva font-kalam"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Juan Carlos Torres Alejandro
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around align-items-center">
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/line-gold-4.png"
+            alt="linea"
+          />
+        </div>
+      </section>
+      <!-- <section class="window-back-2"></section> -->
+      <!-- <section class="pase">
+        <p class="m-0 display-6 font-kala">
+          ¡Que me acompañes es lo más importante!
         </p>
       </section>
+      <section class="pase pt-0">
+        <p class="m-0 display-6 font-kala">
+          Y si está en tu disposición realizar una muestra de cariño, estaré muy
+          agradecida.
+        </p>
+      </section> -->
       <section
         class="window-regalos d-flex justify-content-center align-items-center"
       >
@@ -315,43 +432,193 @@
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <p class="display-4 font-paris text-center pt-4">
+            <p class="display-3 font-paris text-center">
               Mi sugerencia de Regalos
             </p>
             <div class="d-flex justify-content-center">
               <hr class="text-center" />
             </div>
             <div class="row d-flex justify-content-around align-items-center">
-              <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="col-12">
                 <div class="pt-4 d-flex justify-content-center">
-                  <i class="bi bi-gift icon-sobre"></i>
+                  <i class="bi bi-envelope icon-sobre"></i>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <p class="w-80 font-cormo text-center display-6 text-shadow">
-                    Ropa talla 14-16
+                  <p
+                    class="w-80 font-cormo cuenta-regresiva display-4 text-shadow"
+                  >
+                    Sobre con dinero en efectivo
                   </p>
                 </div>
               </div>
-              <div class="col-12" data-aos="fade-up" data-aos-duration="3000">
-                <div class="pt-4 d-flex justify-content-center">
-                  <i class="bi bi-gift icon-sobre"></i>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <p class="w-80 font-cormo text-center display-6 text-shadow">
-                    Bolsas
-                  </p>
-                </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  target="_blank"
+                  href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51349305"
+                  class="w-90 d-flex justify-content-center"
+                  ><button
+                    class="btn btn-light font-paris display-6 text-center my-3 p-2"
+                  >
+                    Ir a mesa de regalos<i class="bi bi-box-arrow-up-right"></i>
+                    <img
+                      loading="lazy"
+                      class="logo-liverpool"
+                      src="./assets/img/LIVERPOOL-logo.png"
+                      alt="logo"
+                    /></button
+                ></a>
               </div>
-              <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+              <!-- <div class="col-12" data-aos="fade-up" data-aos-duration="3000">
                 <div class="pt-4 d-flex justify-content-center">
-                  <i class="bi bi-gift icon-sobre"></i>
+                  <i class="bi bi-credit-card icon-sobre"></i>
                 </div>
                 <div class="d-flex justify-content-center">
                   <p
                     class="w-80 font-cormo text-center display-6 p-0 m-0 text-shadow"
                   >
-                    Zapatos #4
+                    Banco Azteca
                   </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="w-100 font-cormo text-center display-6 text-shadow">
+                    5534 6702 0023 2415
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="w-80 p-0 m-0 font-cormo text-center display-6 p-0 m-0 text-shadow"
+                  >
+                    Regina Yep Olan
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center h-100 p-4 padding-4 bg-vestimenta">
+        <p
+          class="display-4 font-gold font-cormo mt-4 mb-4"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          Código de Vestimenta
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            loading="lazy"
+            class="w-80 img-vestimenta"
+            src="./assets/img/vestimentaformal.png"
+            alt="iglesia"
+          />
+        </div>
+        <p class="text-white font-paris display-4 p-4">formal</p>
+        <!-- <div class="d-flex justify-content-center align-items-center mt-4">
+          <img
+            loading="lazy"
+            class="img-ubicaciones"
+            src="./assets/img/vestido.png"
+            alt="iglesia"
+          />
+        </div>
+        <p class="text-dark">colores claros</p> -->
+      </section>
+      <section class="window-back">
+        <div
+          class="window-15"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          data-aos-offset="200"
+        >
+          <div
+            class="d-flex font-paris text-dark display-3 justify-content-center align-items-center"
+          >
+            Recomendación de hospedaje
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="owl-container gallery">
+            <div class="owl-carousel owl-theme">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card-hotel">
+                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
+                    Hotel Madan
+                  </h2>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="img-ubicaciones"
+                      src="./assets/img/madan.png"
+                      alt="iglesia"
+                    />
+                  </div>
+
+                  <p
+                    class="text-infor text-white font-kalam text-center mr-4 ml-4"
+                  >
+                    C. Francisco Trujillo Gurría 8, Pueblo Nuevo, 86500
+                    Cárdenas, Tab.
+                  </p>
+                  <div
+                    class="d-flex align-items-center py-4 justify-content-center"
+                  >
+                    <a
+                      target="_blank"
+                      class=""
+                      href="https://www.google.com/maps/place/Hotel+Madan/@17.9951227,-93.3847301,14.17z/data=!4m9!3m8!1s0x85ec20608d59860d:0x6f4cc98072b64521!5m2!4m1!1i2!8m2!3d17.9979782!4d-93.3820496!16s%2Fg%2F1tdkg_q1?entry=ttu"
+                      ><button
+                        class="btn display-6 py-3 d-flex align-items-center"
+                      >
+                        <i class="bi bi-geo-alt"></i>
+                        <span
+                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                        >
+                          Ver mapa
+                        </span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card-hotel">
+                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
+                    Relax hotelito
+                  </h2>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="img-ubicaciones"
+                      src="./assets/img/relax.png"
+                      alt="iglesia"
+                    />
+                  </div>
+
+                  <p
+                    class="text-infor text-white font-kalam text-center mr-4 ml-4"
+                  >
+                    Santos Degollado & Cuauhtémoc, 86500 Cárdenas, Tab.
+                  </p>
+                  <div
+                    class="d-flex align-items-center py-4 justify-content-center"
+                  >
+                    <a
+                      target="_blank"
+                      class=""
+                      href="https://www.google.com/maps/place/relax+hotelito/@17.9910462,-93.3790713,15.64z/data=!4m9!3m8!1s0x85ec2141aa60ac79:0x8b40587bff20d5cc!5m2!4m1!1i2!8m2!3d17.9929569!4d-93.3734159!16s%2Fg%2F11t85d7snh?entry=ttu"
+                      ><button
+                        class="btn display-6 py-3 d-flex align-items-center"
+                      >
+                        <i class="bi bi-geo-alt"></i>
+                        <span
+                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                        >
+                          Ver mapa
+                        </span>
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -361,36 +628,48 @@
       <section
         class="recepcion-img animate-left d-flex justify-content-center align-items-center"
       >
-        <p
-          class="text-white pt-4rem mt-4 text-shadow font-paris titles w-80 display-3 text-center"
+        <!-- <p
+          class="text-white text-shadow font-paris titles w-80 display-3 text-center"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          ¡Voy a celebrar con mis personas más importantes!
-        </p>
+          ¡Vamos a celebrar!
+        </p> -->
       </section>
-      <section class="text-center p-4 bg-dark-blue">
-        <h2
-          class="font-cormo text-dark"
+
+      <!-- <section
+        class="recepcion-information2 text-white d-flex flex-column align-items-center justify-content-center"
+      >
+
+      </section> -->
+
+      <section class="text-center font-gold p-4 bg-dark-blue">
+        <p
+          class="display-4 font-cormo font-gold"
           data-aos="zoom-in"
           data-aos-duration="2000"
         >
-          Por favor, ¡Confirma tu asistencia!
-        </h2>
+          ¡Confirma tu asistencia!
+        </p>
         <div class="d-flex justify-content-center align-items-center">
           <p
-            class="w-50 py-4 font-cormo text-dark"
+            class="w-80 py-4 font-cormo text-invitation"
             data-aos="fade-in"
             data-aos-duration="3000"
           >
-            <i class="bi bi-ticket font-icon"></i>Antes del 25 de Noviembre
+            <i class="bi bi-ticket font-icon"></i>Por favor, danos la respuesta
+            de tu asistencia al evento antes del 6 de Diciembre<i
+              class="bi bi-ticket font-icon"
+            ></i>
           </p>
         </div>
         <div>
           <a
-            href="https://wa.me/527821945930?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20al%20evento"
+            target="_blank"
+            class="animate__pulse animate__animated animate__infinite"
+            href="https://wa.me/529372832355?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20al%20evento"
             ><button
-              class="btn p-3 display-6 font-kala animate__animated animate__pulse animate__infinite"
+              class="btn p-3 display-6 font-kala animate__pulse animate__animated animate__infinite"
             >
               <i class="bi bi-check"></i>Confirmar
             </button></a
@@ -398,37 +677,67 @@
         </div>
         <div class="pt-2">
           <a
-            href="https://wa.me/527821945930?text=Hola!%20Gracias%20por%20la%20invitacion%20pero%20no%20podré%20asistir%20al%20evento%20"
+            href="https://wa.me/529372832355?text=Hola!%20Gracias%20por%20la%20invitacion%20pero%20no%20podré%20asistir%20al%20evento%20"
             ><button class="btn p-1 btn-dark font-kala">
               <i class="bi bi-x"></i>No podré asistir
             </button></a
           >
         </div>
       </section>
-      <section
-        class="gracias d-flex justify-content-center align-items-end pt-4rem"
-      >
-        <div class="font-paris text-shadow display-2 mt-4 text-white p-4">
+      <!-- <section class="pase">
+        <p class="m-0 display-6 font-kala">
+          Este día es muy especial y que vayas ¡lo hace aún más!
+        </p>
+      </section> -->
+      <section class="gracias d-flex justify-content-center align-items-center">
+        <div class="font-paris text-shadow display-3 text-white p-4">
           <p
-            class="text-center text-shadow mt-4"
+            class="text-center text-shadow"
             data-aos="fade-down"
             data-aos-duration="2000"
           >
-            ¡Mi familia y yo, te esperamos!
+            ¡Gracias por acompañarme!
           </p>
         </div>
       </section>
       <section class="last-container">
         <p class="text-center m-0 p-0">
+          Invitación hecha por
           <a
             target="_blank"
             href="https://wa.me/524426147355?text=Hola%20Esmeralda!%20Me%20interesa%20contratar%20tu%20servicio"
             class="marca"
-            >Invita-Digital <i class="bi bi-whatsapp"></i
+            >Digital Invite<i class="bi bi-whatsapp"></i
           ></a>
         </p>
       </section>
     </div>
+    <!-- Carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        nav: true,
+        slideBy: 1,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
     <!-- js -->
     <script src="./javascript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
