@@ -37,15 +37,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Charmonman:wght@400;700&family=Edu+QLD+Beginner:wght@400;500;600&family=Great+Vibes&family=Pinyon+Script&family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- styles -->
     <link rel="stylesheet" href="./styles.css" />
     <!-- animate.css -->
@@ -55,7 +49,7 @@
     />
     <!-- AOS animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Cristhel XV's</title>
+    <title>Luisa & Josué</title>
   </head>
   <body class="avoiding-scroll w-100">
     <!-- Sobre -->
@@ -65,364 +59,685 @@
     >
       <div id="hoja-principal" class="sobre">
         <img
+          loading="lazy"
           id="sobre-arriba"
-          src="./assets/img/sobrearriba.png"
+          src="./assets/img/sobre-arriba-luisa-1.png"
           class="animate__animated p-0 m-0 z-index-3"
           alt="sobre-arriba"
         />
         <img
           id="sobre-abajo"
+          loading="lazy"
           class="p-0 m-0 z-index-2 animate__animated"
-          src="./assets/img/sobreabajo.png"
+          src="./assets/img/sobre-abajo-luisa-1.png"
           alt="sobre-abajo"
         />
         <button id="btn-open" class="btn-open" onclick="abrir()">
           <img
             id="logo"
-            src="./assets/img/selloC.png"
+            loading="lazy"
+            src="./assets/img/button-luisa.png"
             class="animate__animated animate__pulse animate__infinite"
             alt="logo"
           />
-          <p id="pulse">Pulse para abrir</p>
         </button>
       </div>
     </div>
     <!-- Invitacion -->
     <div id="invitacion" class="invitacion hide">
       <section class="home d-flex justify-content-center align-items-center">
-        <div class="d-flex justify-content-center align-name">
-          <div class="pt-4 mt-4">
-            <h2
-              id="name"
-              class="text-white text-center animate__animated font-tange display-1"
-            >
-              Cristhel
-            </h2>
-            <h1
-              id="xv"
-              class="font-tange text-center display-3 text-white animate__animated"
-            >
-              Mis XV años
-            </h1>
-          </div>
+        <div class="d-flex justify-content-center">
+          <img
+            loading="lazy"
+            class="name"
+            src="./assets/img/Luisa & Josué.png"
+            alt="name"
+            id="name"
+          />
         </div>
         <div class="text-white text-center player-btn" id="play">
-          <i class="bi bi-pause-circle pause-btn player-icon"></i>
-          <i class="bi bi-play-circle play-btn player-icon d-none"></i>
-          <p>audio</p>
+          <i class="bi bi-pause-circle pause-btn player-icon text-white"></i>
+          <i
+            class="bi bi-play-circle play-btn player-icon d-none text-white"
+          ></i>
+          <p class="text-white">audio</p>
         </div>
         <div class="player-audio">
           <audio
             id="audio"
             controls
             autoplay
-            src="./assets/audio/audio.m3"
+            src="./assets/audio/Eed-sheeran-perfect-instrumentalfx.mp3"
           ></audio>
         </div>
       </section>
-      <section
-        class="cuando p-4 d-flex justify-content-center align-items-center"
-      >
-        <div>
-          <div
-            class="d-flex justify-content-center"
-            data-aos="zoom-in-right"
-            data-aos-duration="2000"
-          >
-            <img
-              class="img-fecha animate-right text-center"
-              src="./assets/img/fechacristel.png"
-              alt="fecha"
-            />
+      <section class="second-section">
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="col-10">
+            <!-- Primera animacion AOS -->
+            <div data-aos="fade-down" data-aos-duration="2000">
+              <div
+                class="pb-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/img/Untitleddesign(3).png"
+                  alt="linae"
+                  class="decoration"
+                />
+              </div>
+              <p class="text-center txt-black display-6">
+                El día más importante de nuestras vidas ha llegado
+              </p>
+              <div
+                class="pt-2 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/img/lineaalreves.png"
+                  alt="linea"
+                  class="decoration"
+                />
+              </div>
+            </div>
           </div>
-          <div
-            class="animate-left"
-            data-aos="zoom-in-left"
-            data-aos-duration="2000"
-          >
-            <p class="text-center font-kalam txt-gray-white m-0 pt-4">Faltan</p>
-            <p id="demo" class="pl-4 pr-4 font-kalam cuenta-regresiva"></p>
+        </div>
+        <div class="container2">
+          <div class="positon-relative">
+            <div class="d-flex justify-content-center align-items-center">
+              <div data-aos="zoom-in" data-aos-duration="3000">
+                <p class="text-white cuenta-regresiva m-0 text-center">
+                  Sábado
+                </p>
+                <p class="text-white text-center font-paris display-4">
+                  23 <span class="text-white">de</span> Marzo
+                  <span class="text-white">de</span> 2024
+                </p>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <p id="demo" class="cuenta-regresiva m-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="pt-4">
+              <p
+                class="title2 pt-4 mb-0 txt-black text-center font-paris"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+              >
+                Nuestra Boda
+              </p>
+              <div
+                class="pb-2 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/img/lineaalreves.png"
+                  alt="linea"
+                  class="decoration"
+                />
+              </div>
+              <div class="text-center p-4">
+                <p
+                  class="pr-4 pl-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  "Son como árboles sembrados junto a los arroyos: llegado el
+                  momento, dan mucho fruto y no se marchitan sus hojas. Todo lo
+                  que hacen les sale bien!"
+                </p>
+                <p
+                  class="pr-4 pl-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Salmo 1:3 (TLA)
+                </p>
+                <p
+                  class="pr-4 pl-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Ante Dios y con la bendición de nuestros padres, tenemos el
+                  honor de invitarles a nuestro enlace matrimonial y recepción
+                  que tendrá lugar el día 23 de Marzo de 2024 a las 12:00pm en
+                  Cabañas "El encanto", ubicado en Las vigas de Ramirez,
+                  Veracruz.
+                </p>
+
+                <!-- <p
+                  class="pr-4 pl-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  El inicio de la familia Acopa Díaz
+                </p> -->
+                <div class="d-flex justify-content-center">
+                  <hr />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="main-phrase text-white d-flex justify-content-center">
-        <div class="w-70">
-          <div class="d-flex justify-content-center pb-4rem">
-            <img
-              class="decoration"
-              src="./assets/img/line-gold-4.png"
-              alt="decoration"
-            />
+      <section class="pase">
+        <p class="m-0 display-6 txt-black">
+          El inicio de la Familia Migoni Hernández
+        </p>
+      </section>
+      <section class="p-4">
+        <p
+          class="text-center title2 font-paris txt-black"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          Agradecemos a nuestros padres
+        </p>
+        <div class="d-flex justify-content-around align-items-center">
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/line2.png"
+            alt="linea"
+          />
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="row">
+            <div class="col-12 col-md-6 mt-4">
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                José Santana Hernández Guevara
+              </p>
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Blanca Estela Uscanga
+              </p>
+            </div>
+            <div class="col-12 col-md-6 mt-4">
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                José Luis Migoni Hernández
+              </p>
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                Luz Maribel Herrera Viveros
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
+      <section class="container3 bg-gold p-4 m-0">
+        <div class="d-flex justify-content-center">
+          <p class="text-center text-white display-6 m-0 p-2">
+            Compartir estos momentos con ustedes, los hace inolvidables.
+          </p>
+        </div>
+      </section>
+      <!-- <section class="p-4">
+        <div class="w-100">
           <p
+            class="text-center mt-4 title2 font-paris"
             data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-            data-aos-offset="300"
-            class="display-4 font-paris names text-center animate-text pb-3"
+            data-aos-duration="2000"
           >
-            Cristhel Garcia Alejandro
+            Nuestros padrinos
           </p>
-          <p
-            class="pl-4 pr-4 pb-4 mb-4 text-shadow font-kalam text-invitation text-center animate-text display-6"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
-          >
-            Con el transcurso del tiempo note que sigo creciendo, pero que este
-            se estaciona en una que siempre soñé desde niña... verme vestida de
-            princesa acompañada con mis seres queridos y grandes amigos... ya
-            estoy esperando con ansias esta noche, y por eso quiero contar con
-            tu especial presencia.
-          </p>
-          <p
-            class="pl-4 pr-4 text-invitation pb-4 mb-4 text-shadow font-kalam text-center animate-text display-6"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
-          >
-            Mi familia y yo, tenemos el honor de invitarte a celebrar mis XV
-            años.
-          </p>
-          <p
-            class="pl-4 text-invitation pr-4 pb-4 mb-4 text-shadow font-kalam text-center animate-text display-6"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
-          >
-            El evento será el día sábado 16 de diciembre del presente año, en el
-            salón de eventos Suterm. Te esperamos en punto de las 7:30pm para
-            llevar a cabo nuestra celebración.
-          </p>
-          <p
-            class="pl-4 pr-4 pb-4 mb-4 text-shadow text-invitation font-kalam text-center animate-text display-6"
-            data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
-          >
-            Tu presencia es muy importante para mi y mi familia quienes han
-            preparado este evento tan significativo con mucho esfuerzo y amor.
-          </p>
-
-          <div class="d-flex justify-content-center pt-4rem">
-            <img
-              class="decoration"
-              src="./assets/img/line-gold-4.png"
-              alt="decoration"
-            />
-          </div>
         </div>
-      </section>
-      <section class="window-back2">
-        <div
-          class="window-152"
-          data-aos="fade-right"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-          data-aos-offset="200"
-        >
-          <div class="d-flex justify-content-center align-items-center">
-            <p class="display-3 text-center font-paris pl-4 pr-4">Fiesta</p>
-          </div>
-        </div>
-      </section>
-      <!-- <section
-        class="recepcion-information2 text-white d-flex align-items-center justify-content-center"
-      >
-        <div>
-          <h2
-            class="text-white font-paris display-4 pr-4 pl-4 mb-4 text-center"
-          >
-            Ceremonia Religiosa
-          </h2>
-          <div class="d-flex justify-content-center align-items-center">
-            <img
-              loading="lazy"
-              class="img-ubicaciones"
-              src="./assets/img/cruz.png"
-              alt="iglesia"
-            />
-          </div>
-          <p class="hora font-kalam text-center">7:00pm</p>
-
-          <p class="text-infor font-kalam text-center mr-4 ml-4">
-            Hacienda Los Samanes carretera federal comalcalco-paraiso km2
-          </p>
-          <div class="d-flex align-items-center py-4 justify-content-center">
-            <a
-              class=""
-              href="https://www.google.com/maps?q=Hacienda+Los+Samanes&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyBggFEEUYPTIGCAYQRRg8MgYIBxBFGD3SAQgxMTA2ajBqMagCALACAA&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiFr8GT7t2CAxWsKkQIHTJmA8YQ_AUoAXoECAIQAw"
-              ><button class="btn display-6 py-3 d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <span
-                  class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
-                >
-                  Ver mapa
-                </span>
-              </button></a
+        <div class="d-flex justify-content-center">
+          <div class="owl-container">
+            <div
+              class="owl-carousel owl-theme"
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
+               <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/anillos.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Anillos</p>
+                  <p class="card-text text-center display-6">
+                    Roberto Rodriguez Saenz
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Veronica Martínez Torres
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/coin.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Arras</p>
+                  <p class="card-text text-center display-6">
+                    José Díaz Hernández
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Ilse Macías Hernández
+                  </p>
+                </div>
+              </div> 
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Velacion</p>
+                  <p class="card-text text-center display-6">
+                    María Hernández Velazquez
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Ervin Díaz Pérez
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section> -->
-
-      <!-- <section class="window-back">
-        <div
-          class="window-15"
-          data-aos="fade-right"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-          data-aos-offset="200"
-        >
-          <div class="d-flex justify-content-center align-items-center">
-¿          </div>
+      <!-- <section class="container3 bg-gold p-4 m-0">
+        <div class="d-flex justify-content-center">
+          <p class="w-50 text-center text-white m-0 p-2 display-6">
+            ¡Nos gustaría mucho que nos acompañaras!
+          </p>
         </div>
       </section> -->
-      <section
-        class="recepcion-information text-white d-flex align-items-center justify-content-center"
-      >
-        <div>
-          <h2
-            class="txt-green font-gold font-kalam display-4 pr-4 pl-4 mb-4 text-center"
+      <section class="itinerario">
+        <p class="text-center display-4 font-paris text-white m-0 pt-4">
+          Itinerario
+        </p>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-50">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__pulse animate__repeat-2 animate_slower"
+                      src="./assets/img/iglesia.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Bendición Matrimonial
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5"
+                  >
+                    12:00pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-50">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__swing repeat-2"
+                      src="./assets/img/fiesta.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white font-paris text-center display-5"
+                  >
+                    Recepción
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5"
+                  >
+                    1:00pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
           >
-            Salón de eventos Suterm (CFE)
-          </h2>
-          <div class="d-flex justify-content-center align-items-center">
-            <img
-              loading="lazy"
-              class="img-ubicaciones"
-              src="./assets/img/mesas.png"
-              alt="iglesia"
-            />
-          </div>
-          <p class="hora font-kalam text-center text-green">7:30pm</p>
-
-          <p class="lead font-kalam text-center mr-4 ml-4 text-infor txt-green">
-            Zoila E. Peña Falcon, 86597 Cárdenas, Tab.
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <!-- <section class="bg-gray p-3">
+        <p class="text-center p-0 m-0">Usa nuestro filtro en la fiesta</p>
+        <div class="d-flex justify-content-evenly">
+          <a
+            href="https://www.facebook.com/fbcameraeffects/testit/311356561758774/ZWRkMjFiOWU4NjhlZWMzMDNiNTZiZjgxY2UxMGI5ZjM=/"
+            class="text-center p-0 m-0 linksfiltro"
+          >
+            <i class="bi bi-facebook"></i>facebook
+          </a>
+          <a
+            href="https://www.instagram.com/ar/311356561758774/?ch=ZWRkMjFiOWU4NjhlZWMzMDNiNTZiZjgxY2UxMGI5ZjM%3D"
+            class="text-center p-0 m-0 linksfiltro"
+          >
+            <i class="bi bi-instagram"></i>instagram
+          </a>
+        </div>
+      </section> -->
+      <section class="ubicacion pt-4">
+        <div>
+          <p
+            class="text-center m-0 txt-black pt-4 display-5"
+            data-aos="flip-up"
+            data-aos-duration="2000"
+          >
+            Ubicación
           </p>
-          <div class="d-flex align-items-center py-4 justify-content-center">
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/place/SINDICATO+DE+LA+SUTERM/@17.9778247,-93.3619302,17z/data=!3m1!4b1!4m6!3m5!1s0x85ec21fed107a8cf:0x88274bcb1719117d!8m2!3d17.9778247!4d-93.3619302!16s%2Fg%2F11pvh3y6cn?entry=ttu"
-              ><button class="btn display-6 py-3 d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <span
-                  class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
-                >
-                  Ver mapa
-                </span>
-              </button></a
-            >
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="line" src="./assets/img/lineaalreves.png" alt="linea" />
           </div>
-          <!-- <div class="d-flex justify-content-center align-items-center">
-            <p class="w-50 text-center">
-              Da click en el botón para obtener más indicaciones
-            </p>
+        </div>
+        <div class="d-flex row m-0 justify-content-center align-items-center">
+          <div
+            class="col-md-5 container-ubicaciones"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div class="card-ubicaciones">
+              <!-- <p class="text-center font-paris mb-0 display-4">Ceremonia</p>
+              <p class="text-center font-paris mb-0 display-4">y</p>
+              <p class="text-center font-paris mb-0 display-4">Recepción</p> -->
+
+              <p
+                class="text-center mt-4 title2 font-paris text-center display-4"
+              >
+                Cabañas “El Encanto"
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  loading="lazy"
+                  class="img-ubicaciones"
+                  src="./assets/img/cab.png"
+                  alt="iglesia"
+                />
+              </div>
+              <p class="text-center display-6 py-3">12:00pm</p>
+              <p class="text-center">
+                91330 Casa Blanca, 91330 Las Vigas de Ramírez, Veracruz.
+              </p>
+              <div
+                class="d-flex align-items-center py-4 justify-content-center"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Caba%C3%B1as+El+Encanto/@19.6397136,-97.1393926,17z/data=!3m1!4b1!4m9!3m8!1s0x85dad9d88d3bfe43:0x387e746e085faa20!5m2!4m1!1i2!8m2!3d19.6397136!4d-97.1393926!16s%2Fg%2F11h000b9by?entry=ttu"
+                  ><button
+                    class="btn txt-fucsia display-6 py-3 d-flex align-items-center"
+                  >
+                    <i class="bi bi-geo-alt txt-fucsia"></i>
+                    <span
+                      class="txt-fucsia d-flex align-items-center justify-content-center p-0 m-0"
+                    >
+                      Ver mapa
+                    </span>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="col-md-5 container-ubicaciones"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="700"
+          >
+            <div class="card-ubicaciones">
+              <p class="text-center font-paris display-4">Recepción</p>
+              <p class="text-center display-6">20:00hrs</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  class="img-ubicaciones"
+                  src="./assets/img/casamari.png"
+                  alt="salon"
+                />
+              </div>
+              <p class="text-center display-6 py-3">
+                Jardín de Eventos “Casa Marí”
+              </p>
+              <p class="text-center">
+                Carretera a Independencia KM 5 R/ANorte 1ra sección, 86670 Tab.
+              </p>
+              <div
+                class="d-flex align-items-center py-3 justify-content-center"
+              >
+                <a
+                  target="_blank"
+                  href="https://maps.google.com/?q=CASA%20MAR%C3%8D%20EVENTOS,%20CARRETERA%20A%20INDEPENDENCIA%20KM%205%20R/ANORTE%201RA%20SECCION,%2086670%20Tab.&ftid=0x85ee8f4206805e45:0x36aa8d73770f7e3c&hl=es-MX&gl=mx&entry=gps&lucs=,47071704"
+                  ><button class="btn display-6 py-3 d-flex align-items-center">
+                    <i class="bi bi-geo-alt"></i>
+                    <span
+                      class="d-flex align-items-center justify-content-center p-0 m-0"
+                    >
+                      Ver mapa
+                    </span>
+                  </button></a
+                >
+              </div>
+            </div>
           </div> -->
         </div>
       </section>
-      <section class="window-back3">
+      <section class="window-back">
         <div
-          class="window-153"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-          data-aos-offset="600"
-        ></div>
-      </section>
-      <section class="familiares-information2">
-        <div>
+          class="window d-flex justify-content-center align-items-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <p
-            class="text-center mt-4 display-3 px-3 font-gold font-paris"
-            data-aos="zoom-in-up"
+            class="p-4 txt-black rounded bg-white text-center w-90 display-5 font-paris font-weight-light"
+          >
+            ¡Dios ha sido fiel hasta el día de hoy!
+          </p>
+        </div>
+      </section>
+      <section class="p-4">
+        <div class="w-100">
+          <p
+            class="text-center txt-black mt-4 title2 font-paris"
+            data-aos="fade-down"
             data-aos-duration="2000"
           >
-            Agradezco a mis padres
+            Sugerencias de hospedaje
           </p>
         </div>
         <div class="d-flex justify-content-center">
-          <div class="row m-0">
-            <div class="col-12 mt-4">
-              <p
-                class="text-center text-white cuenta-regresiva font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Nuri Cristal Alejandro Rodríguez
-              </p>
-              <p
-                class="text-center text-white cuenta-regresiva font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Miguel García Gonzáles
-              </p>
+          <div class="owl-container gallery">
+            <div class="owl-carousel owl-theme">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card-hotel">
+                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
+                    Cabañas “El Encanto"
+                  </h2>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="img-ubicaciones"
+                      src="./assets/img/cabania.png"
+                      alt="iglesia"
+                    />
+                  </div>
+
+                  <p class="text-infor pt-4 font-kalam text-center mr-4 ml-4">
+                    A pie de Carr. Federal Xalapa-Perote, Km 292, Col. Casa
+                    Blanca. Las Vigas de Ramírez, Ver.
+                  </p>
+                  <p class="text-infor pt-4 font-kalam text-center mr-4 ml-4">
+                    Teléfono: 222 913 3399
+                  </p>
+                  <div
+                    class="d-flex align-items-center py-4 justify-content-center"
+                  >
+                    <a
+                      target="_blank"
+                      class=""
+                      href="https://www.xn--cabaaselencanto-1qb.com/es/habitaciones"
+                      ><button
+                        class="btn display-6 py-3 d-flex align-items-center"
+                      >
+                        <i class="bi bi-geo-alt"></i>
+                        <span
+                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                        >
+                          Ver sitio
+                        </span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card-hotel">
+                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
+                    Hotel “ Villa Las Margaritas”
+                  </h2>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="img-ubicaciones"
+                      src="./assets/img/mesario.png"
+                      alt="iglesia"
+                    />
+                  </div>
+
+                  <p class="text-infor pt-4 font-kalam text-center mr-4 ml-4">
+                    Benito Quijano No. 10, Col. Tatahuicapan, Xalapa, Ver.
+                  </p>
+                  <p class="text-infor pt-4 font-kalam text-center mr-4 ml-4">
+                    Tel.: 228 812 4325
+                  </p>
+                  <div
+                    class="d-flex align-items-center py-4 justify-content-center"
+                  >
+                    <a
+                      target="_blank"
+                      class=""
+                      href="https://www.villalasmargaritas.com/caxa"
+                      ><button
+                        class="btn display-6 py-3 d-flex align-items-center"
+                      >
+                        <i class="bi bi-geo-alt"></i>
+                        <span
+                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
+                        >
+                          Ver sitio
+                        </span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-around align-items-center">
+      </section>
+      <section class="container3 bg-gold p-4 m-0">
+        <div class="d-flex justify-content-center">
+          <p class="w-50 text-center text-white m-0 p-2 display-6">
+            ¡Nos gustaría mucho que nos acompañaras!
+          </p>
+        </div>
+      </section>
+      <section class="p-4" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="py-4 d-flex justify-content-center align-items-center">
           <img
             loading="lazy"
-            class="decoration"
-            src="./assets/img/line-gold-4.png"
+            class="line"
+            src="./assets/img/lineaalreves.png"
+            alt="linea"
+          />
+        </div>
+        <div class="py-4 d-flex justify-content-center">
+          <p class="text2 text-center txt-black">
+            Para nosotros el mejor regalo es compartir con ustedes este día tan
+            especial, pero si gustan enviarnos un obsequio éste será bienvenido,
+            aquí estan nuestras sugerencias.
+          </p>
+        </div>
+        <div class="pb-4 d-flex justify-content-center align-items-center">
+          <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/Untitleddesign(3).png"
             alt="linea"
           />
         </div>
       </section>
-      <section class="familiares-information">
-        <div>
-          <p
-            class="text-center mt-4 display-3 px-3 font-gold font-paris"
-            data-aos="zoom-in-up"
-            data-aos-duration="2000"
-          >
-            Y a mis padrinos
-          </p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="row m-0">
-            <div class="col-12 mt-4">
-              <p
-                class="text-center display-6 text-white cuenta-regresiva font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Dellimir de la Cruz de la Cruz
-              </p>
-              <p
-                class="text-center display-6 text-white cuenta-regresiva font-kalam"
-                data-aos="flip-down"
-                data-aos-duration="1500"
-              >
-                Juan Carlos Torres Alejandro
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-around align-items-center">
-          <img
-            loading="lazy"
-            class="decoration"
-            src="./assets/img/line-gold-4.png"
-            alt="linea"
-          />
-        </div>
-      </section>
-      <!-- <section class="window-back-2"></section> -->
-      <!-- <section class="pase">
-        <p class="m-0 display-6 font-kala">
-          ¡Que me acompañes es lo más importante!
-        </p>
-      </section>
-      <section class="pase pt-0">
-        <p class="m-0 display-6 font-kala">
-          Y si está en tu disposición realizar una muestra de cariño, estaré muy
-          agradecida.
-        </p>
-      </section> -->
       <section
         class="window-regalos d-flex justify-content-center align-items-center"
       >
@@ -432,282 +747,154 @@
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <p class="display-3 font-paris text-center">
-              Mi sugerencia de Regalos
+            <p class="display-4 text-center pt-4 font-paris text-white">
+              Mesa de Regalos
             </p>
             <div class="d-flex justify-content-center">
               <hr class="text-center" />
             </div>
             <div class="row d-flex justify-content-around align-items-center">
-              <div class="col-12">
-                <div class="pt-4 d-flex justify-content-center">
-                  <i class="bi bi-envelope icon-sobre"></i>
+              <div class="col-md-6">
+                <div
+                  class="d-flex pt-4 justify-content-center align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    class="logo-liverpool"
+                    src="./assets/img/LIVERPOOL-logo.png"
+                    alt="logo"
+                  />
                 </div>
                 <div class="d-flex justify-content-center">
-                  <p
-                    class="w-80 font-cormo cuenta-regresiva display-4 text-shadow"
-                  >
+                  <a
+                    target="_blank"
+                    href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51329142"
+                    class="w-80 d-flex justify-content-center"
+                    ><button
+                      class="btn txt-fucsia btn-light display-6 text-center my-3 p-2"
+                    >
+                      Ir a mesa de regalos<i
+                        class="bi bi-box-arrow-up-right"
+                      ></i></button
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="pt-4 d-flex justify-content-center">
+                  <i class="bi bi-envelope icon-sobre text-white"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="w-80 text-white text-center display-6 text-shadow">
                     Sobre con dinero en efectivo
                   </p>
                 </div>
               </div>
-              <div class="d-flex justify-content-center">
-                <a
-                  target="_blank"
-                  href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51349305"
-                  class="w-90 d-flex justify-content-center"
-                  ><button
-                    class="btn btn-light font-paris display-6 text-center my-3 p-2"
-                  >
-                    Ir a mesa de regalos<i class="bi bi-box-arrow-up-right"></i>
-                    <img
-                      loading="lazy"
-                      class="logo-liverpool"
-                      src="./assets/img/LIVERPOOL-logo.png"
-                      alt="logo"
-                    /></button
-                ></a>
-              </div>
-              <!-- <div class="col-12" data-aos="fade-up" data-aos-duration="3000">
-                <div class="pt-4 d-flex justify-content-center">
-                  <i class="bi bi-credit-card icon-sobre"></i>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <p
-                    class="w-80 font-cormo text-center display-6 p-0 m-0 text-shadow"
-                  >
-                    Banco Azteca
-                  </p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <p class="w-100 font-cormo text-center display-6 text-shadow">
-                    5534 6702 0023 2415
-                  </p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <p
-                    class="w-80 p-0 m-0 font-cormo text-center display-6 p-0 m-0 text-shadow"
-                  >
-                    Regina Yep Olan
-                  </p>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </section>
-      <section class="text-center h-100 p-4 padding-4 bg-vestimenta">
-        <p
-          class="display-4 font-gold font-cormo mt-4 mb-4"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-        >
-          Código de Vestimenta
-        </p>
-        <div class="d-flex justify-content-center align-items-center">
-          <img
-            loading="lazy"
-            class="w-80 img-vestimenta"
-            src="./assets/img/vestimentaformal.png"
-            alt="iglesia"
-          />
-        </div>
-        <p class="text-white font-paris display-4 p-4">formal</p>
-        <!-- <div class="d-flex justify-content-center align-items-center mt-4">
-          <img
-            loading="lazy"
-            class="img-ubicaciones"
-            src="./assets/img/vestido.png"
-            alt="iglesia"
-          />
-        </div>
-        <p class="text-dark">colores claros</p> -->
-      </section>
-      <section class="window-back">
-        <div
-          class="window-15"
-          data-aos="fade-right"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-          data-aos-offset="200"
-        >
-          <div
-            class="d-flex font-paris text-dark display-3 justify-content-center align-items-center"
-          >
-            Recomendación de hospedaje
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="owl-container gallery">
-            <div class="owl-carousel owl-theme">
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="card-hotel">
-                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
-                    Hotel Madan
-                  </h2>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img
-                      loading="lazy"
-                      class="img-ubicaciones"
-                      src="./assets/img/madan.png"
-                      alt="iglesia"
-                    />
-                  </div>
-
-                  <p
-                    class="text-infor text-white font-kalam text-center mr-4 ml-4"
-                  >
-                    C. Francisco Trujillo Gurría 8, Pueblo Nuevo, 86500
-                    Cárdenas, Tab.
-                  </p>
-                  <div
-                    class="d-flex align-items-center py-4 justify-content-center"
-                  >
-                    <a
-                      target="_blank"
-                      class=""
-                      href="https://www.google.com/maps/place/Hotel+Madan/@17.9951227,-93.3847301,14.17z/data=!4m9!3m8!1s0x85ec20608d59860d:0x6f4cc98072b64521!5m2!4m1!1i2!8m2!3d17.9979782!4d-93.3820496!16s%2Fg%2F1tdkg_q1?entry=ttu"
-                      ><button
-                        class="btn display-6 py-3 d-flex align-items-center"
-                      >
-                        <i class="bi bi-geo-alt"></i>
-                        <span
-                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
-                        >
-                          Ver mapa
-                        </span>
-                      </button></a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="card-hotel">
-                  <h2 class="font-gold pr-4 pl-4 mb-4 text-center">
-                    Relax hotelito
-                  </h2>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img
-                      loading="lazy"
-                      class="img-ubicaciones"
-                      src="./assets/img/relax.png"
-                      alt="iglesia"
-                    />
-                  </div>
-
-                  <p
-                    class="text-infor text-white font-kalam text-center mr-4 ml-4"
-                  >
-                    Santos Degollado & Cuauhtémoc, 86500 Cárdenas, Tab.
-                  </p>
-                  <div
-                    class="d-flex align-items-center py-4 justify-content-center"
-                  >
-                    <a
-                      target="_blank"
-                      class=""
-                      href="https://www.google.com/maps/place/relax+hotelito/@17.9910462,-93.3790713,15.64z/data=!4m9!3m8!1s0x85ec2141aa60ac79:0x8b40587bff20d5cc!5m2!4m1!1i2!8m2!3d17.9929569!4d-93.3734159!16s%2Fg%2F11t85d7snh?entry=ttu"
-                      ><button
-                        class="btn display-6 py-3 d-flex align-items-center"
-                      >
-                        <i class="bi bi-geo-alt"></i>
-                        <span
-                          class="d-flex font-cormo align-items-center justify-content-center p-0 m-0"
-                        >
-                          Ver mapa
-                        </span>
-                      </button></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="recepcion-img animate-left d-flex justify-content-center align-items-center"
-      >
-        <!-- <p
-          class="text-white text-shadow font-paris titles w-80 display-3 text-center"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
-          ¡Vamos a celebrar!
-        </p> -->
-      </section>
-
-      <!-- <section
-        class="recepcion-information2 text-white d-flex flex-column align-items-center justify-content-center"
-      >
-
-      </section> -->
-
-      <section class="text-center font-gold p-4 bg-dark-blue">
-        <p
-          class="display-4 font-cormo font-gold"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-        >
-          ¡Confirma tu asistencia!
-        </p>
-        <div class="d-flex justify-content-center align-items-center">
+      <section class="d-flex justify-content-center align-items-center">
+        <div class="w-80 py-4 text-center">
           <p
-            class="w-80 py-4 font-cormo text-invitation"
-            data-aos="fade-in"
-            data-aos-duration="3000"
+            class="display-6 txt-black"
+            data-aos="flip-up"
+            data-aos-duration="2000"
           >
-            <i class="bi bi-ticket font-icon"></i>Por favor, danos la respuesta
-            de tu asistencia al evento antes del 6 de Diciembre<i
-              class="bi bi-ticket font-icon"
-            ></i>
+            ¡Gracias por tus muestras de cariño!
+          </p>
+          <div>
+            <p
+              class="display-6 txt-black"
+              data-aos="flip-up"
+              data-aos-duration="2000"
+            >
+              Si así lo prefieres, también puedes hacer transferencia
+            </p>
+            <div class="d-flex justify-content-center">
+              <hr />
+            </div>
+            <p class="display-number">Cuenta BanCoppel 10188592487</p>
+            <p class="display-number">CLABE BanCoppel 137849101885924871</p>
+
+            <p>Luisa Iveth Hernández Uscanga</p>
+            <p>Concepto: Regalo de (nombre de invitado)</p>
+          </div>
+        </div>
+      </section>
+      <section class="pase bg-gold p-4">
+        <p class="text-white text-center display-6">
+          Este día es muy especial y que vayas ¡lo hace aún más!
+        </p>
+      </section>
+      <section class="bg-gray p-3">
+        <p class="text-center p-0 m-0">
+          <i class="bi bi-hearts txt-black"></i>Respetuosamente NO NIÑOS
+        </p>
+      </section>
+      <section class="pt-3rem">
+        <p class="text-center font-paris display-4">Código de Vestimenta</p>
+        <p class="text-center txt-fucsia">Campirano Formal</p>
+        <div>
+          <img
+            src="./assets/img/etiqueta rigurosa.png"
+            alt="dresscode"
+            class="owl-container"
+          />
+        </div>
+        <div class="pb-4 d-flex justify-content-center align-items-center">
+          <img
+            loading="lazy"
+            src="./assets/img/Untitleddesign(3).png"
+            alt="linae"
+            class="decoration"
+          />
+        </div>
+      </section>
+      <section class="text-center p-4">
+        <p
+          class="display-6 txt-black"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          ¡Importante confirmar asistencia!
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="w-50 py-4" data-aos="fade-in" data-aos-duration="3000">
+            Por favor, danos la respuesta de tu asistencia al evento con
+            Arlette, nuestra Wedding Planner, antes del 10 de Febrero
           </p>
         </div>
         <div>
           <a
             target="_blank"
-            class="animate__pulse animate__animated animate__infinite"
-            href="https://wa.me/529372832355?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20al%20evento"
-            ><button
-              class="btn p-3 display-6 font-kala animate__pulse animate__animated animate__infinite"
-            >
-              <i class="bi bi-check"></i>Confirmar
-            </button></a
-          >
-        </div>
-        <div class="pt-2">
-          <a
-            href="https://wa.me/529372832355?text=Hola!%20Gracias%20por%20la%20invitacion%20pero%20no%20podré%20asistir%20al%20evento%20"
-            ><button class="btn p-1 btn-dark font-kala">
-              <i class="bi bi-x"></i>No podré asistir
+            href="https://wa.me/522285935668?text=¡Hola%20buen%20día!%20Hago%20la%20confirmación%20de%20asistencia%20a%20la%20boda%20de%20Luisa%20y%20Josué%20a%20nombre%20de:%20"
+            ><button class="btn p-3 display-6 txt-fucsia">
+              <i class="bi bi-check txt-fucsia"></i>Confirmar
             </button></a
           >
         </div>
       </section>
-      <!-- <section class="pase">
-        <p class="m-0 display-6 font-kala">
-          Este día es muy especial y que vayas ¡lo hace aún más!
-        </p>
-      </section> -->
-      <section class="gracias d-flex justify-content-center align-items-center">
-        <div class="font-paris text-shadow display-3 text-white p-4">
+      <section
+        class="last-window-back d-flex justify-content-center align-items-center"
+      >
+        <div class="font-paris display-2 text-white p-4">
           <p
-            class="text-center text-shadow"
+            class="text-center text-white"
             data-aos="fade-down"
             data-aos-duration="2000"
           >
-            ¡Gracias por acompañarme!
+            ¡Te esperamos!
           </p>
         </div>
       </section>
       <section class="last-container">
-        <p class="text-center m-0 p-0">
+        <p class="text-center text-white m-0 p-0">
           Invitación hecha por
           <a
             target="_blank"
-            href="https://wa.me/524426147355?text=Hola%20Esmeralda!%20Me%20interesa%20contratar%20tu%20servicio"
+            href="https://wa.me/524426147355?text=¡Hola%20Esmeralda!%20¿Me%20podrías%20dar%20informes%20de%20las%20Invitaciones%20tipo%20página%20web?"
             class="marca"
-            >Digital Invite<i class="bi bi-whatsapp"></i
+            >Esmeralda <i class="bi bi-whatsapp text-white"></i
           ></a>
         </p>
       </section>

@@ -2,24 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #0e437d;
 }
-.font-edu {
-  font-family: "Edu QLD Beginner", cursive;
-}
-.font-paris {
-  font-family: "Parisienne", cursive;
-}
-.font-great {
-  font-family: "Great Vibes", cursive;
-}
-.font-tange {
-  font-family: "Tangerine", cursive;
-}
-.font-pinyon {
-  font-family: "Pinyon Script", cursive;
-}
-.font-charmo {
-  font-family: "Charmonman", cursive;
+.marca {
+  color: #4d917a;
 }
 .max-w-90 {
   max-width: 100vw;
@@ -28,24 +14,9 @@
   height: 100%;
   overflow: hidden;
 }
-.display-3 {
-  font-size: 3.5rem;
-}
+
 .font-paris {
   font-family: "Parisienne", cursive;
-}
-.display-1 {
-  font-size: 7rem !important;
-}
-.font-cormo {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-}
-.font-kalam {
-  font-family: "Kalam", cursive;
-}
-.font-gold {
-  color: #9d6e26;
 }
 .text-shadow {
   text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -69,24 +40,16 @@
 .sobre {
   height: 100vh;
   width: 80vw;
+  /* z-index: 1; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .bg-dark-black {
-  background-color: rgb(235, 193, 198);
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-  padding: 0;
-  margin: 0;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-position: top;
+  background-color: #242321;
+}
+.txt-black {
+  color: black !important;
 }
 
 .animate__animated.animate__fadeOut {
@@ -117,33 +80,28 @@
   max-width: 100%;
   border-style: none;
 }
-button {
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
   box-shadow: none !important;
   transition: none !important;
 }
-button:focus {
-  outline: none;
-}
-.btn-light {
-  color: white;
-  background-color: #1e433c;
-  border-color: #205252;
-}
-.txt-gray-white {
-  color: #dddddd !important;
-}
+
 .btn-open {
+  box-shadow: none !important;
+  transition: none !important;
   position: absolute;
   z-index: 4;
+  background-color: rgba(240, 255, 255, 0);
   border: none;
-  background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  border: none;
+}
+.btn-open:focus {
+  outline: none;
 }
 .btn-open img {
-  height: 50%;
-  width: 50%;
-  padding-top: 7rem;
+  height: 25%;
+  width: 25%;
+  /* padding-bottom: 4rem; */
 }
 .hide {
   visibility: hidden;
@@ -152,71 +110,6 @@ button:focus {
 
 .visibility {
   visibility: hidden;
-}
-/* Cuando */
-.cuando {
-  height: 90vh;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-  padding: 0;
-  margin: 0;
-  font-size: 2rem;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-position: top;
-}
-.img-fecha {
-  height: 45vh;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-}
-.cuenta {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.text-fecha {
-  font-size: 3rem;
-}
-
-.cuenta-regresiva {
-  text-align: center;
-  font-size: 1.5rem;
-  /* text-shadow: 1px 1px 2px rgba(20, 17, 17, 0.507); */
-}
-.txt-shadow-white {
-  color: #314c45 !important;
-
-  text-shadow: rgba(247, 245, 245, 0.482) 0px 54px 55px,
-    rgba(201, 199, 199, 0.794) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.main-phrase {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  height: min-content;
-  margin: 0;
-  /* background-color: #12141d; */
-  background-image: linear-gradient(rgb(9 64 39 / 42%), rgb(6 57 26 / 72%)),
-    url("./assets/img/bg5.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.w-70 {
-  width: 80%;
-}
-.main-phrase .text {
-  font-size: 1.6rem;
 }
 /* home */
 .invitacion {
@@ -231,18 +124,15 @@ button:focus {
       rgba(5, 7, 12, 0.308),
       rgba(5, 7, 12, 0.335)
     ),
-    url("./assets/img/cristhel4.jpg");
+    url("./assets/img/pexels-emma-bauso-2253842.jpg");
   background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-repeat: no-repeat;
   background-position: top;
 }
 .name {
-  /* padding-top: 5rem; */
   width: 80%;
   padding-right: 0;
+  padding-top: 7rem;
 }
 /* audio */
 .player-audio {
@@ -254,9 +144,6 @@ button:focus {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 100%;
-}
-.text-invitation {
-  font-size: 1.6rem !important;
 }
 .player-btn {
   bottom: 2rem;
@@ -277,11 +164,8 @@ button:focus {
 .second-section {
   height: min-content;
   max-width: 100%;
-  background-image: url("./assets/img-j-ignacio/");
+  background-image: url("./assets/img/andre-jackson-IXLS59CTgDE-unsplash.jpg");
   background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -293,8 +177,18 @@ button:focus {
   min-width: 100%;
 }
 .second-section .container2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.493),
+      rgba(5, 7, 12, 0.335)
+    ),
+    url("./assets/img/pexels-fidel-hajj-2814808.jpg");
   height: 60vh;
-  width: auto;
   background-color: rgba(0, 0, 0, 0.575);
   background-position: center;
   display: flex;
@@ -307,7 +201,6 @@ button:focus {
 }
 .decoration {
   width: 200px;
-  height: 5vh;
 }
 .display-4 {
   font-size: 3rem;
@@ -319,12 +212,18 @@ button:focus {
 }
 .cuenta-regresiva {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
+  color: rgba(240, 248, 255, 0.849) !important;
 }
 .cuenta {
   display: flex;
   justify-content: center;
   width: 60%;
+  color: rgba(240, 248, 255, 0.849) !important;
+}
+
+.txt-fucsia {
+  color: #ab0073 !important;
 }
 .txt-pink {
   font-size: 1rem;
@@ -348,184 +247,9 @@ hr {
 .icon-mp4 {
   width: 50px;
 }
-.gallery .owl-nav {
-  display: none;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  color: white;
-}
-.gallery .owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
-  outline-style: none;
-}
-/* window */
-.window-back {
-  height: max-content;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(rgb(9 64 39 / 42%), rgb(6 57 26 / 72%)),
-    url("./assets/img/bg5.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-}
-.align-name {
-  align-items: end;
-  height: 100vh;
-  padding-bottom: 9rem;
-}
-.window-back2 {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(30 97 90);
-  /* background-image: url("./assets/img/pexels-karolina-grabowska-4040592.jpg"); */
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-}
-.window-153 {
-  color: white;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("./assets/img/cristhel2.jpg");
-}
-.window-back3 {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-image: url("./assets/img/cristhel1.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-/* linear-gradient(
-        rgba(5, 7, 12, 0.527),
-        rgba(5, 7, 12, 0.514)
-      ), */
-.names {
-  color: #314c45;
-  font-weight: bolder;
-}
-.txt-green {
-  /* color: #314c45 !important; */
-  color: #2c3e25 !important;
-}
-.window-15 {
-  text-align: center;
-  height: 80vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: left;
-  background-image: url("./assets/img/bg7.png");
-}
-.card-hotel {
-  flex-direction: column;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery {
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-}
-.window-152 {
-  color: white;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/pexels-cottonbro-studio-3171815.jpg");
-}
-
-.window {
-  color: white;
-  height: 0vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  /* background-color: rgba(255, 235, 205, 0);s */
-  /* background-image: url("./assets/img-j-ignacio/bg-azul-marino-1.png"); */
-}
-.numero-15 {
-  width: 200px;
-}
-.pb-4rem {
-  padding-bottom: 4rem;
-}
-.pt-4rem {
-  padding-top: 3rem;
-}
-.animate-image {
-  opacity: 0;
-  transition: all ease 0.8s;
-}
-@keyframes appear-image {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.appear-image {
-  animation: appear-image 0.9s;
-}
 /* Pase */
 .pase {
-  background-color: whitesmoke;
+  background-color: rgba(189, 188, 188, 0.29);
   height: min-content;
   display: flex;
   justify-content: center;
@@ -540,70 +264,18 @@ hr {
 .font-gold {
   color: rgb(168, 143, 105);
 }
-/* recepcion */
-.recepcion-img {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.274),
-      rgba(5, 7, 12, 0.171)
-    ),
-    url("./assets/img/cristhel4.jpg");
-  /* url("./assets/img/fiesta.png"); */
-
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-.recepcion-information {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  height: max-content;
-  margin: 0;
-  background-image: linear-gradient(rgb(9 64 39 / 42%), rgb(6 57 26 / 72%)),
-    url("./assets/img/bg5.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-.recepcion-information2 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  height: max-content;
-  margin: 0;
-  background-image: linear-gradient(rgb(9 64 39 / 42%), rgb(6 57 26 / 72%)),
-    url("./assets/img/bg5.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-.hora {
-  font-size: 3.5rem;
-}
 /* itinerario */
 .itinerario {
-  height: 60vh;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.277),
-      rgba(5, 7, 12, 0.277)
-    ),
-    url("./assets/img/salon3.jpg");
+  display: flex;
+  height: 80vh;
+  background-image: linear-gradient(rgb(5 7 12 / 60%), rgb(10 14 24 / 73%)),
+    url("./assets/img/mesaa.png");
   background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-repeat: no-repeat;
   background-position: bottom;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h3 {
   top: 25;
@@ -617,7 +289,7 @@ h3 {
 .card {
   background-color: rgba(137, 43, 226, 0);
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   border: none;
 }
 .card-img {
@@ -647,15 +319,8 @@ h3 {
 }
 .img-ubicaciones {
   border-radius: 100%;
-  width: 200px !important;
-  height: 200px !important;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.img-hoteles {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -690,7 +355,28 @@ button:hover {
   width: 30%;
 }
 /* segundo window */
-
+.window-back {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-image: linear-gradient(rgb(5 7 12 / 70%), rgb(10 14 24 / 37%)),
+    url("./assets/img/flores.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.window {
+  height: 40vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
 .w-90 {
   width: 85%;
 }
@@ -699,8 +385,8 @@ button:hover {
   background-color: rgb(197, 166, 119);
 }
 .nuestro-inicio img {
-  width: 250;
-  height: 180px;
+  width: 95vw;
+  height: 100%;
   border: solid 2px whitesmoke;
   border-radius: 5px;
 }
@@ -715,20 +401,13 @@ button:hover {
   width: 50%;
 }
 .window-regalos {
-  height: max-content;
+  height: min-content;
   max-width: 100%;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.277),
-      rgba(5, 7, 12, 0.277)
-    ),
-    url("./assets/img/pexels-antoni-shkraba-5486845.jpg");
+  background-image: url("./assets/img/regalois.jpeg");
   background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 .btn {
   white-space: normal !important;
@@ -738,11 +417,10 @@ a:hover {
 }
 
 .card-regalos {
-  margin: 1rem 0 2rem;
+  margin: 2rem 0;
   height: 80%;
   width: 100%;
-  border-radius: 5%;
-  background-color: rgb(194 194 194 / 57%);
+  background-color: rgb(50 50 50 / 57%);
 }
 .logo-liverpool {
   width: 150px;
@@ -753,144 +431,53 @@ a:hover {
 .bg-gray {
   background-color: rgba(189, 188, 188, 0.29);
 }
-.bg-dark-blue {
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
+.gallery .owl-nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
   color: white;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.padding-4 {
-  padding-top: 2rem !important;
-  padding-bottom: 4rem !important;
+.gallery .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  outline-style: none;
 }
-.bg-vestimenta {
-  height: min-content !important;
-  color: white;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
+.owl-carousel .owl-item img {
+  width: 60% !important;
 }
-.bg-trans-white {
-  background-color: rgba(249, 249, 240, 0.229);
-}
-/*  window  2 back */
-.window-back-2 {
+/* last window back */
+.last-window-back {
   height: 100vh;
   max-width: 100%;
-  background-image: url("./assets/img/Regina-5.jpeg");
+  background-image: linear-gradient(rgb(5 7 12 / 70%), rgb(10 14 24 / 37%)),
+    url("./assets/img/pexels-fidel-hajj-2814808.jpg");
+  background-size: cover;
+  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
+  -moz-background-size: cover; /* Para Firefox */
+  -o-background-size: cover; /* Para Opera */
   background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-repeat: no-repeat;
   background-position: center;
 }
-.text-infor {
-  font-size: 1.8rem;
+.pt-3rem {
+  padding-top: 3rem;
 }
-.img-vestimenta {
-  border-radius: 100%;
-  background: #00000061;
+.linksfiltro {
+  text-decoration: underline;
+  color: #465260 !important;
 }
-.window-2 {
-  color: white;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-color: rgba(255, 235, 205, 0);s */
-  background-image: url("./assets/img-j-ignacio/jose4.jpeg");
-}
-
-.familiares-information {
-  padding-top: 5rem;
-  min-height: max-content;
-  margin: 0;
-  padding-bottom: 7rem;
-  /* background-color: #94815d; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-}
-.familiares-information2 {
-  padding-top: 5rem;
-
-  min-height: max-content;
-  margin: 0;
-  padding-bottom: 2rem;
-  /* background-color: #94815d; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.527),
-      rgba(5, 7, 12, 0.514)
-    ),
-    url("./assets/img/bg2.jpg");
-}
-.card {
-  width: 80%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(240, 248, 255, 0.325);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.h-80 {
-  height: 80%;
-}
-.padres {
-  border-radius: 100%;
-  width: 60%;
+.justify-content-evenly {
+  justify-content: space-evenly;
 }
 .last-container {
-  color: rgba(255, 255, 255, 0.496);
-  font-size: 0.8rem;
+  font-size: 12px;
   height: 3vh;
   width: 100%;
-  background-color: #12141d;
+  background-color: #383838;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -899,42 +486,13 @@ a:hover {
 .display-2 {
   font-size: 2.8rem;
 }
-.gracias {
-  height: 100vh;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(
-      rgba(5, 7, 12, 0.393),
-      rgba(5, 7, 12, 0.462)
-    ),
-    url("./assets/img/cristhel3.jpg");
-  background-size: cover;
-  -webkit-background-size: cover; /* Para Safari y Chrome antiguos */
-  -moz-background-size: cover; /* Para Firefox */
-  -o-background-size: cover; /* Para Opera */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.marca {
-  color: rgb(244 244 248 / 74%);
-}
 @media (min-width: 470px) {
-  .name {
-    width: 70%;
-    padding-right: 0 !important;
-  }
-  .display-3 {
-    font-size: 4rem;
-  }
   .title-principal {
     font-size: 3.5rem;
   }
-  .hora {
-    font-size: 2.8rem;
-  }
-  .display-1 {
-    font-size: 8rem !important;
+  .btn-open img {
+    height: 50%;
+    width: 50%;
   }
   .nuestro-inicio img {
     width: 450px;
@@ -959,37 +517,22 @@ a:hover {
   .display-5 {
     font-size: 1.3rem;
   }
-  .img-fecha {
-    height: 50vh;
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-  }
 }
 
 @media (min-width: 760px) {
-  .name {
-    width: 60%;
-    padding-right: 0 !important;
-  }
-  .hora {
-    font-size: 3rem;
-  }
-  .display-3 {
-    font-size: 4.5rem;
-  }
-  .display-1 {
-    font-size: 9rem !important;
-  }
   .title-principal {
     font-size: 5.5rem;
   }
-
+  .btn-open img {
+    height: 55%;
+    width: 55%;
+  }
   .display-4 {
     font-size: 3.6rem;
   }
 
   .cuenta-regresiva {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .owl-container {
     width: 60%;
@@ -1008,6 +551,9 @@ a:hover {
     width: 250px;
     margin-bottom: 2rem;
   }
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
   .w-90 {
     width: 60%;
   }
@@ -1017,22 +563,11 @@ a:hover {
   .display-5 {
     font-size: 1.4rem;
   }
-  .img-fecha {
-    height: 50vh;
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-  }
 }
 @media (min-width: 1020px) {
   .name {
-    width: 50%;
+    width: 70%;
     padding-right: 0 !important;
-  }
-  .hora {
-    font-size: 3.5rem;
-  }
-  .display-1 {
-    font-size: 10rem !important;
   }
   .z-index-3 {
     position: absolute;
@@ -1057,8 +592,8 @@ a:hover {
     border-style: none;
   }
   .btn-open img {
-    height: 40%;
-    width: 40%;
+    height: 70%;
+    width: 70%;
   }
   .card {
     height: 45vh;
