@@ -13,6 +13,8 @@ function abrir() {
   audio.play();
 
   setTimeout(function () {
+    document.getElementById("name").classList.add("animate__zoomIn");
+
     document.getElementById("logo").classList.add("hide");
     document.getElementById("hoja-principal").classList.add("hide");
     document.getElementById("invitacion").classList.remove("hide");
