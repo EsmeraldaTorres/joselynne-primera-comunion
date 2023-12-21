@@ -105,6 +105,9 @@
 .btn-open:focus {
   outline: none;
 }
+.p-0 {
+  padding: 0 !important;
+}
 .btn-open img {
   height: 25%;
   width: 25%;
