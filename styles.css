@@ -10,6 +10,9 @@
 .marca {
   color: #4d917a;
 }
+.text-white {
+  color: white !important;
+}
 .font-normal {
   font-family: "Mitr";
   font-weight: 200;
