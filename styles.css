@@ -12,6 +12,7 @@
 }
 .text-white {
   color: white !important;
+  -webkit-color: white !important;
 }
 .font-normal {
   font-family: "Mitr";
