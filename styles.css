@@ -105,6 +105,18 @@
   background-color: rgba(240, 255, 255, 0);
   border: none;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -webkit-box; /* Antiguos -webkit- */
+  display: -moz-box; /* Antiguos -moz- */
+  display: -ms-flexbox; /* Antiguos -ms- */
+  display: -webkit-flex; /* Antiguos -webkit- (Safari 6.1+) */
+  display: flex; /* Estándar moderno */
+  justify-content: center;
+  align-items: center;
 }
 .btn-open:focus {
   outline: none;
