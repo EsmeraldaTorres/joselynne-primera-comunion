@@ -142,6 +142,16 @@
 .invitacion {
   width: 100vw;
 }
+
+/* .w-100 {
+  width: 100vw;
+}
+.h-100 {
+  height: 100vh;
+}
+.h-100vh {
+  height: 100vh;
+} */
 .home {
   height: 100vh;
   width: 100%;
@@ -238,11 +248,21 @@
   letter-spacing: 2px;
   padding: 0 2rem;
 }
+/* .h-90 {
+  height: 90vh;
+}
+.bg-filter-page {
+  background-color: salmon;
+} */
 .cuenta-regresiva {
   text-align: center;
   font-size: 1.1rem;
   color: rgba(240, 248, 255, 0.849) !important;
 }
+/* .cuenta-regresiva-filtro {
+  text-align: center;
+  font-size: 1.1rem;
+} */
 .cuenta {
   display: flex;
   justify-content: center;
@@ -285,6 +305,10 @@ hr {
   padding: 2rem;
   text-align: center;
   letter-spacing: 2px;
+}
+.img-fb-instructions {
+  width: 200px;
+  height: 200px;
 }
 .font-icon {
   font-size: 1.2rem;
